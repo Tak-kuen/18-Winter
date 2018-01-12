@@ -6,37 +6,16 @@ public class Calculator {
 	private String operator="";
 	private int result;
 	
-	public String getOperator() {
-		return operator;
-	}
+	public String getOperator() {return operator;}
+	public void setOperator(String operator) {this.operator = operator;}
 
-	public void setOperator(String operator) {
-		this.operator = operator;
-	}
+	public int getResult() {return result;}
+	public void setResult(int result) {this.result = result;}
 
-	public int getResult() {
-		return result;
-	}
-
-	public void setResult(int result) {
-		this.result = result;
-	}
-
-	public void setOperand1(int operand1) {
-		this.operand1 = operand1;
-	}
-
-	public void setOperand2(int operand2) {
-		this.operand2 = operand2;
-	}
-
-	public int getOperand1() {
-		return operand1;
-	}
-
-	public int getOperand2() {
-		return operand2;
-	}
+	public void setOperand1(int operand1) {this.operand1 = operand1;}
+	public void setOperand2(int operand2) {this.operand2 = operand2;}
+	public int getOperand1() {return operand1;}
+	public int getOperand2() {return operand2;}
 
 	public void plus() {result = operand1 + operand2;}
 	public void sub() {result = operand1 - operand2;}

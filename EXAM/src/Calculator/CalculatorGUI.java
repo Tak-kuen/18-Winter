@@ -26,8 +26,7 @@ public class CalculatorGUI extends JFrame implements ActionListener{
 		tField = new JTextField(35);
 		panel = new JPanel();
 		tField.setText("0");
-		tField.setEnabled(false);
-		tField.setDisabledTextColor(Color.BLACK);
+		tField.setEditable(false);
 		int Operand = Integer.parseInt((tField).getText());
 		
 		panel.setLayout(new GridLayout(0,4,3,3));
